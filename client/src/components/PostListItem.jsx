@@ -20,7 +20,7 @@ const PostListItem = ({ post }) => {
           <span>Written by</span>
           <Link
             className='text-blue-800'
-            to={`/posts?author=${post?.user.username || 'unknown'}`}
+            to={`/posts?author=${post?.user?.username || 'unknown'}`}
           >
             {post?.user?.username || 'Anonymous'}
           </Link>

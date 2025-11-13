@@ -26,8 +26,8 @@ const PostMenuActions = ({ post }) => {
   });
 
   const isAdmin = user?.publicMetadata?.role === 'admin' || false;
-  const isSaved = Array.isArray(savedPosts?.data) 
-    ? savedPosts.data.some((p) => p === post._id) 
+  const isSaved = Array.isArray(savedPosts?.data)
+    ? savedPosts.data.some((p) => p === post._id)
     : false;
 
   const deleteMutation = useMutation({
