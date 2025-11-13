@@ -83,7 +83,7 @@ const Write = () => {
         <input
           className="text-4xl font-semibold bg-transparent outline-none"
           type="text"
-          placeholder="My Awesome Story"
+          placeholder="Post title goes here :)"
           name="title"
         />
         <div className="flex items-center gap-4">
